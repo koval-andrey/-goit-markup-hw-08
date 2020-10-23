@@ -1,0 +1,44 @@
+.logo-web 
+    {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: $accent-color;   
+    }
+.header .header-link-logo .logo-studio 
+    {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+    
+    }
+
+.footer .footer-link .logo-studio 
+    {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+        color: $accent-color-light;    
+    }
+    .header-link-logo 
+    {
+       font-style: normal;
+       list-style: none;
+       font-weight: 500;
+       font-size: 14px;
+       line-height: 16px;
+       text-decoration-line:none;
+       color: $title-text-color;
+       margin-right: 93px;
+       cursor: pointer;   
+    }

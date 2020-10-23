@@ -1,0 +1,151 @@
+.form-order 
+                {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                }
+                .form-order-field 
+                {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                position: relative;
+                
+                width: 448px;
+                margin-bottom: 10px;
+                }
+                .form-order-title 
+                {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 1.15;
+                    text-align: center;
+                    color: #212121;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 10px;
+                }
+                 .form-label 
+               {
+                display: block;
+                font-size: 12px;
+                line-height: 1.17;       
+                letter-spacing: 0.01em;
+                color: #757575;
+                }
+
+                .form-order-input
+                {
+                    display: block;
+                     
+                    width: 448px;
+                    height: 40px;
+                    padding-left: 42px;
+                    border: 1px solid rgba(33, 33, 33, 0.2);
+                    box-sizing: border-box;
+                    border-radius: 4px;                    
+                }
+                .form-order-input:focus,
+                .form-order-input:hover,
+                .form-order-input:not(:placeholder-shown):valid
+                 {
+                    border-color: $accent-color;
+                    cursor: pointer; 
+                 }
+                 
+                 .form-icon-svg
+               {
+                display: block;
+                z-index: 1;
+                position: absolute;
+                top: 50%;
+                left: 8px;
+                fill: #212121;
+               }
+               .form-order-field:hover .form-icon-svg,
+               .form-order-field:focus-within .form-icon-svg
+               {
+               fill: $accent-color;
+               }
+              
+              
+             
+               .form-order-textarea 
+                {
+                  resize: none;
+                width: 448px;
+                height: 120px; 
+                margin-bottom: 20px;
+                padding-left: 20px;
+                }
+                .form-order-textarea-label
+                {
+                display: block;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 1.17;
+
+                color: #757575;   
+                }
+                .form-order-textarea::placeholder 
+                {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 1.17;
+                    
+                    
+                    color: rgba(117, 117, 117, 0.5);  
+                }
+                .agreement 
+                {
+                    display: flex;
+                }
+                .form-order-checkbox
+                {
+                    display: inline-block;
+                    appearance: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+    
+                    
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 1.71;
+                    letter-spacing: 0.03em;
+                    
+                    color: #757575;
+                }
+                
+
+            .checkbox-icon 
+            {
+                display: inline-block;
+                width: 15px;
+                height: 16px;
+               align-self: center;
+                margin-left: 8px;
+                background-color: transparent;
+                border: 2px solid #212121;
+                border-radius: 2px;
+            }
+            .form-order-checkbox:checked + .checkbox-icon
+            {
+            
+                background-image: url('../img/icons.svg/icon-check.svg');
+                background-size: contain;
+                background-origin: border-box;
+                border-color: transparent;
+            }
+            .checkbox-link-oder 
+            {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 1.71;
+            color: $accent-color;
+            }
+               

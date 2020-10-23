@@ -1,0 +1,91 @@
+.advantage .advantage-list
+                {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                }
+                .advantage-item 
+                {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 270px;
+                }
+                .advantage-item:nth-child(1)::before 
+                {
+                    display: block;
+                    content:"";
+                    width: 270px;
+                    height: 120px;
+                    background-color: #F5F4FA;
+                    border-radius: 4px;
+                    background-image: url(../img/hw-04/antenna\ 1.svg);
+                                   
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    margin-bottom: 30px;
+                }
+                .advantage-item:nth-child(2)::before 
+                {
+                    display: block;
+                    content:"";
+                    width: 270px;
+                    height: 120px;
+                    background-color: #F5F4FA;
+                    border-radius: 4px;
+                    background-image: url(../img/hw-04/clock\ 1.svg);
+                                   
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    margin-bottom: 30px;
+                }
+                .advantage-item:nth-child(3)::before 
+                {
+                    display: block;
+                    content:"";
+                    width: 270px;
+                    height: 120px;
+                    background-color: #F5F4FA;
+                    border-radius: 4px;
+                    background-image: url(../img/hw-04/diagram\ 1.svg);
+                                   
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    margin-bottom: 30px;
+                }
+                .advantage-item:nth-child(4)::before 
+                {
+                    display: block;
+                    content:"";
+                    width: 270px;
+                    height: 120px;
+                    background-color: #F5F4FA;
+                    border-radius: 4px;
+                    background-image: url(../img/hw-04/astronaut\ 1.svg);
+                                   
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    margin-bottom: 30px;
+                }
+                .advantage-item:not(:last-child) 
+                {
+                margin-right: 30px;}  
+
+                .advantage-title 
+                {
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 1.143;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                color: $title-text-color;
+                }
+    .advantage-text 
+                {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 1.714;
+                letter-spacing: 0.03em;
+                color: $primary-text-color;
+                } 

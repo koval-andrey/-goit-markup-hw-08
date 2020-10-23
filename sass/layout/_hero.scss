@@ -1,0 +1,25 @@
+.hero       
+                {
+                
+                background-size: cover;
+                background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+               rgba(47, 48, 58, 0.4)),url(../img/hw-04/background-picture.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                }
+   
+        
+    
+        .hero-title 
+                {
+                max-width: 500px;
+                margin-bottom: 30px;
+                font-weight: 900;
+                font-size: 44px;
+                text-align: center;
+                line-height: 1.36;
+                color: $accent-color-light;
+                }
+     
