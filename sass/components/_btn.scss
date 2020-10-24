@@ -17,10 +17,10 @@
                 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
                 transition-timing-function: linear;
                 
-            }
+            
                 /*активная кнопка в hero*/
-    .hero-btn:active,
-    .hero-btn:focus 
+    &:active,
+    &:focus 
                 {
                     font-weight: bold;
                     font-size: 16px;
@@ -33,6 +33,7 @@
                     background-color: #21f3d7;
                       
                 }
+            }
                 .form-order-btn 
                 {
                     display: flex;
@@ -59,14 +60,15 @@
                     transition-property: color, background-color;       
                     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
                     transition-timing-function: linear;
-                    }
-                    .form-order-submit:hover,
-                    .form-order-submit:focus 
+                    
+                    &:hover,
+                    &:focus 
                 {
                     
                     color: $accent-color;
                     background-color: #21f3d7;
                 }
+            }
                     .footer-btn-submit 
                  {
                 

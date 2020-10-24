@@ -1,5 +1,5 @@
 .social-list 
-{
+  {
     display: flex;
     justify-content: space-evenly;
     cursor: pointer;
@@ -14,25 +14,28 @@
     border-radius: 50%;
     background-color: $accent-color-light;
     cursor: pointer;
-  }
   
-  .social-list-link:hover,
-  .social-list-link:focus 
+  
+  &:hover,
+  &:focus 
   {
     background-color: $accent-color;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
   }
+}
   .social-link-svg 
   {
 
     fill: #AFB1B8;
-  }
-  .social-list-link:hover .social-link-svg,
-  .social-list-link:focus .social-link-svg 
+
+
+  .social-list-link:hover &,
+  .social-list-link:focus & 
   {
       fill:  $accent-color-light;
       transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
   }
+}
   .footer-social-list 
 {
   display: flex;  
@@ -48,18 +51,19 @@
     background-color: rgba(255, 255, 255, 0.1);
     margin-right: 10px;
     cursor: pointer;
-}
-.footer-social-list-item:last-child
-{
-    margin-right: 0px;    
-}
-.footer-social-list-link:hover,
-.footer-social-list-link:focus 
+
+&:hover,
+&:focus 
 {
  background: $accent-color;
  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);   
 }
+}
 .footer-social-link-svg 
 {
  fill: $accent-color-light;   
+}
+.footer-social-list-item:last-child
+{
+    margin-right: 0px;    
 }
