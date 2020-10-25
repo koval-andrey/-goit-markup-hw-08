@@ -8,11 +8,8 @@
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                }
-   
-        
-    
-        .hero-title 
+                
+        &-title 
                 {
                 max-width: 500px;
                 margin-bottom: 30px;
@@ -22,4 +19,5 @@
                 line-height: 1.36;
                 color: $accent-color-light;
                 }
+        }
      
