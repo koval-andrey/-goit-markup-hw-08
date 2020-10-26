@@ -86,25 +86,14 @@
         .address-items .icon-smartphone
                 {
                 fill: $primary-text-color;
-                transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+                transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); }
                 
-                .header-link-address:hover &,
-                .header-link-address:focus &
-                    {
-                        fill: $accent-color;   
-                    }
-                } 
+                
         .address-items .icon-envelope
                 {
                 fill: $primary-text-color;
-                transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-                
-        .header-link-address:hover &,
-        .header-link-address:focus &
-                {
-                    fill: $accent-color;  
-                }
-            }
+                transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);} 
+        
           
         
          .address-list 
@@ -129,5 +118,17 @@
         &:hover,    
         &:focus
                 { 
-                color: $accent-color;}
+                color: $accent-color;
+                
+                & .icon-smartphone,
+                & .icon-smartphone
+                    {
+                        fill: $accent-color;   
+                    }
+                & .icon-envelope,
+                & .icon-envelope
+                            {
+                                fill: $accent-color;  
+                            }
+                }
     }

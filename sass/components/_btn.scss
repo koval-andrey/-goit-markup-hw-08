@@ -12,7 +12,7 @@
                 height: 50px;
                 border-radius: 4px;
                 border-style: none;
-                background-color: #2196F3;
+                background-color: $accent-color;
                 transition-property: color, background-color;       
                 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
                 transition-timing-function: linear;
@@ -33,6 +33,7 @@
                     background-color: #21f3d7;
                       
                 }
+                
             }
                 .form-order-btn 
                 {
@@ -81,7 +82,7 @@
                     cursor: pointer;
                     border-radius: 4px;
                     border-style: none;
-                    background-color:$accent-color;
+                    background-color: $accent-color;
                     font-weight: bold;
                     font-size: 16px;
                     line-height: 1.875;
