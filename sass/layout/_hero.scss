@@ -1,23 +1,131 @@
 .hero       
+        {
+                
+        
+        }
+        @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+        background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+       rgba(47, 48, 58, 0.4)),
+       url("../../img/mobile-img/hero-mobile@2x.jpg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       &-title 
                 {
-                
-                background-size: cover;
-                background-image: linear-gradient(to right,
-                rgba(47, 48, 58, 0.4),
-               rgba(47, 48, 58, 0.4)),url(../img/hw-04/background-picture.jpg);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                
+                margin-bottom: 30px;
+                font-weight: 900;
+                font-size: 26px;
+                line-height: 1.62;
+                text-align: center;
+                color: $accent-color-light;
+                }
+        
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+   rgba(47, 48, 58, 0.4)),
+      url("../../img/mobile-img/hero-mobile.jpg");
+      &-title 
+                {
+                margin-bottom: 30px;
+                font-weight: 900;
+                font-size: 26px;
+                line-height: 1.62;
+                text-align: center;
+                color: $accent-color-light;
+                }
+    }
+  }
+
+
+@media screen and (min-width: 768px) {
+  .hero {
+        background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+       rgba(47, 48, 58, 0.4)),
+          url("../../img/tablet-img/hero-tablet.jpg");
+          &-title 
+                {
+                max-width: 500px;
+                margin-bottom: 30px;
+                font-weight: 900;
+                font-size: 26px;
+                line-height: 1.62;
+                text-align: center;
+                color: $accent-color-light;
+                }
+    
+    }
+  }
+
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+         background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)),
+        url("../../img/tablet-img/hero-tablet@2x.jpg");
         &-title 
                 {
                 max-width: 500px;
                 margin-bottom: 30px;
                 font-weight: 900;
-                font-size: 44px;
+                font-size: 26px;
+                line-height: 1.62;
                 text-align: center;
-                line-height: 1.36;
                 color: $accent-color-light;
                 }
-        }
-     
+    }
+  }
+
+
+@media screen and (min-width: 1200px) {
+  .hero {
+        background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+       rgba(47, 48, 58, 0.4)),
+          url("../../img/disktop-img/hero-disktop.jpg");
+          &-title 
+          {
+          max-width: 500px;
+          margin-bottom: 30px;
+          font-weight: 900;
+          font-size: 44px;
+          text-align: center;
+          line-height: 1.36;
+          color: $accent-color-light;
+          }
+  }
+
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+        background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+       rgba(47, 48, 58, 0.4)),
+          url("../../img/disktop-img/hero-disktop@2x.jpg");
+          &-title 
+          {
+          max-width: 500px;
+          margin-bottom: 30px;
+          font-weight: 900;
+          font-size: 44px;
+          text-align: center;
+          line-height: 1.36;
+          color: $accent-color-light;
+          }
+    }
+  }
+}
