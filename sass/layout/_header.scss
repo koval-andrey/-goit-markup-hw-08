@@ -1,20 +1,18 @@
-.header 
+
+   
+   
+   /* @media screen and (min-width: 320px) and (max-width: 767px) 
     {
-        
-        border-bottom: 1px solid #ECECEC;
-    }
-    @media screen and (min-width: 320px) and (max-width: 767px) {
-        .header {position: relative;}   
-    }
-       
+    .header {position: relative;}   
+     
     .navigation 
     {
-        display: flex;
+        display: block;
         align-items: center;
         
         &-list 
         {
-         display: flex;
+         display: block;
         }
     } 
         .navigation-list-items 
@@ -124,6 +122,8 @@
                 background: $accent-color;
                 border-radius: 2px;
                 }
+            }
+        }
      
     
      /*.header-link 
@@ -233,4 +233,4 @@
                                 fill: $accent-color;  
                             }
                 }
-    }
+    }*/

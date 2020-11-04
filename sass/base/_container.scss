@@ -1,140 +1,26 @@
 
 
-    @media screen and (min-width: 480px) 
-    {.container 
-        {
-        width: 480px;
-        margin: 0 auto;
-        padding: 0 15px;    
-        }
-        .header & 
-      {
-        align-items: center;     
-      }
-      
-      .hero & 
-                {
-                display: block;
-                align-items: center;
-                
-                }
-      .advantage &
-                {
-                display: block;
-                align-items: center;
-                padding-top: 94px;
-                 padding-bottom: 94px;
-                }
-      .function & 
-                {
-                  display: block; 
-                  align-items: center;
-                  padding-bottom: 94px; 
-                }
-                .staff &
-                {
-                    display: block;
-                    
-                    align-items: center;
-                    padding-top: 94px;
-                    padding-bottom: 94px;
-                                       
-                } 
-                .clients & 
-                {
-                display: block;
-                align-items: center;
-                padding-top: 94px; 
-                padding-bottom: 94px;   
-               }
-               .footer & 
-                {
-                    display: block;
-                    align-items: center;
-                    padding-top: 60px;
-                    padding-bottom: 60px;
-                
-                }
-                .main &
-                {
-                    display: block;
-                    justify-content: center;   
-                }
-    }
-
-    @media screen and (min-width: 768px) 
-    {.container 
-        {
-        width: 768px;
-        margin: 0 auto;    
-        }
-    }
-
-   
-   @media screen and (min-width: 1200px)
-   {.container 
-   {   
-        width: 1200px;
-        padding: 0 15px;
-        margin: 0 auto;                                                                                                                                                                                                                                                                                                                                             
-      
-      .header & 
-      {
-          display: flex;
-          align-items: center;   
-      }
-      section &
-      {
-          width: 1600;
-          margin: 0 auto;
-      }
-      .hero & 
-                {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 200px;
-                }
-      .advantage &
-                {
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                padding-top: 94px;
-                 padding-bottom: 94px;
-                }
-      .function & 
-                {
-                  display: none; 
-                }
-                .staff &
-                {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    padding-top: 94px;
-                    padding-bottom: 94px;
-                                       
-                } 
-                .clients & 
-                {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                padding-top: 94px; 
-                padding-bottom: 94px;   
-               }
-               .footer & 
-                {
-                    display: flex;
-                    align-items: center;
-                    padding-top: 60px;
-                    padding-bottom: 60px;
-                
-                }
-                .main &
-                {
-                    display: flex;
-                    justify-content: center;   
-                }
-            }}
+   .container 
+   {
+     width: 100%;
+     margin: 0 auto;
+     padding: 0 15px;
+   }
+   @media screen and (min-width: 480px) {
+     .container {
+       width: 480px;
+       margin: 0 auto;
+  
+     }
+   }
+   @media screen and (min-width: 768px) {
+     .container {
+       width: 768px;    
+     }
+   }
+   @media screen and (min-width: 1200px) 
+   { .container {
+       width: 1200px;     
+     }
+   }
+  
