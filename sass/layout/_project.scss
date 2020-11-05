@@ -1,3 +1,83 @@
+
+.project {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  
+    &-title {
+      @extend %title-mob-tab;
+    }
+  
+   
+  
+    &-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90px;
+      border: 1px solid $social-link-color;
+      border-radius: 4px;
+      @include transition($tp: border-color);
+  
+      &:hover,
+      &:focus,
+      &:active {
+        border-color: $accent-color;
+      }
+    }
+    &-icon {
+      fill: $social-link-color;
+      @include transition($tp: fill);
+  
+      .clients-link:hover &,
+      .clients-link:focus &,
+      .clients-link:active & {
+        fill: $accent-color;
+      }
+    }
+  
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+      
+       &-item {
+      margin: 15px;
+      width: calc((100% - 4 * 15px) / 2);
+    }
+    }
+   
+  }
+  
+  
+  @media screen and (min-width: 768px)  {
+    .clients-list{
+      
+      &-item {
+      width: calc((100% - 6 * 15px) / 3);
+    }
+     }
+  }
+  
+  
+  
+  @media screen and (min-width: 1200px) {
+    .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  
+  
+  &-title {
+      font-size: 36px;
+      line-height: 1.167;
+      margin-bottom: 50px;
+    
+    }
+  
+    &-list-item {
+      width: calc((100% - 12 * 15px) / 6);
+      }
+    }
+  }
 .projects-list 
 {
     display: flex;

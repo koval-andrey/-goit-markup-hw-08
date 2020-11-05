@@ -1,3 +1,7 @@
+.advantages {
+    padding-top:60px;
+    padding-bottom: 60px;}
+
 @media screen and (min-width: 480px)
 {
 .advantage-list
@@ -81,18 +85,63 @@
                 font-weight: bold;
                 text-align: center;
                 font-size: 14px;
-                line-height: 1.143;
+                line-height: 1.14;
                 letter-spacing: 0.03em;
                 text-transform: uppercase;
                 color: $title-text-color;
+                margin-bottom: 10px;
                 }
                 .advantage-text 
                 {
                 font-weight: normal;
                 text-align: center;
                 font-size: 14px;
-                line-height: 1.714;
+                line-height: 1.7;
                 letter-spacing: 0.03em;
                 color: $primary-text-color;
+                
                 } 
             }
+            
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item {
+    width: 354px;
+}
+    &-item:not(:nth-child(2n)) {
+    margin-right: 30px;
+   }
+  
+    &-item:nth-last-child(-n + 2) {
+     margin-bottom: 0px;
+     }
+
+}
+
+}
+
+  @media screen and (min-width: 1200px) {
+  .advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+ 
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+
+  &-item {
+  width: 270px;
+    
+  }
+}
+}
+
+

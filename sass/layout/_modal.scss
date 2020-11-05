@@ -28,5 +28,97 @@ transition: all 250ms linear;
     border-radius: 4px;
     background: #FFFFFF;
     padding: 40px;
-    z-index:999999;
+    z-index:999;
 }
+@media screen and (min-width: 480px) {
+    .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(360deg);
+    width: 450px;
+    height: 608px;
+  
+    .backdrop.is-hidden & {
+      transform: translate(-50%, -50%) scale(0);
+    }
+  
+    }
+  
+  }
+  
+  @media screen and (min-width:1200px) {
+    .modal {
+     width: 528px;
+    height: 581px;
+  
+    &-title {
+      line-height: 1.15;
+  
+   }
+   }
+   .modal-form {
+     font-size: 12px;
+  
+    &::placeholder {
+        font-size: 12px;
+        line-height: 1.167;
+        
+      }
+      }
+    }
+  
+    @media screen and (min-width: 480px) 
+    {
+        .modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1) rotate(360deg);
+        width: 450px;
+        height: 609px;
+      
+        .backdrop.is-hidden & {
+          transform: translate(-50%, -50%) scale(0);
+        }
+      
+        }
+      
+      }
+      
+      @media screen and (min-width:1200px) 
+      {
+        .modal {
+         width: 528px;
+        height: 581px;
+      
+        &-title {
+          line-height: 1.15;
+      
+       }
+       }
+       .modal-form {
+         font-size: 12px;
+      
+        &::placeholder {
+            font-size: 12px;
+            line-height: 1.167;
+            
+          }
+                
+         .checkbox-link {
+          font-size: 14px;
+          line-height: 1.714;
+      
+          
+            & a {
+            font-size: 14px;
+            line-height: 1.714;
+           
+          }
+      
+        }
+      }
+      } 
+   
+    

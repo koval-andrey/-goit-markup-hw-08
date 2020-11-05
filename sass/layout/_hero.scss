@@ -1,8 +1,31 @@
+.hero {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+       rgba(47, 48, 58, 0.4)
+      ), url("../../img/mobile-img/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  padding: 118px 0;
+  margin: 0 auto;
+  text-align: center;
+  
 
+  &-title {
+    display: block;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.7;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin: 0 auto 30px;
+     }
+    }
         
-        @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-  screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+        @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  screen and (min-resolution: 192dpi) and (min-width: 320px),
+  screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .hero {
         
           width: 100%;
@@ -33,13 +56,11 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 480) and (max-width: 767px) {
   .hero {
-          width: 100%;
-          height: 400px;
-          padding: 118px 60px;
-          margin-bottom: 60px;
-          text-align: center;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 480px;
     background-image: linear-gradient(
     rgba(47, 48, 58, 0.4),
    rgba(47, 48, 58, 0.4)),
@@ -47,11 +68,7 @@
       &-title 
                 {
                
-                margin-bottom: 30px;
-                font-weight: 900;
-                font-size: 26px;
-                line-height: 1.62;
-                color: #FFFFFF;
+                  width: 360px;
 
                 }
     }
@@ -64,18 +81,11 @@
         rgba(47, 48, 58, 0.4),
        rgba(47, 48, 58, 0.4)),
           url("../../img/tablet-img/hero-tablet.jpg");
-          &-title 
-                {
-                max-width: 500px;
-                margin-bottom: 30px;
-                font-weight: 900;
-                font-size: 26px;
-                line-height: 1.62;
-                text-align: center;
-                color: #FFFFFF;
-
-                }
-    
+          background-size: 768px 400px;
+          margin: 0 auto;
+          text-align: center;
+          max-width: 768px;
+            
     }
   }
 
@@ -88,16 +98,6 @@
       rgba(47, 48, 58, 0.4),
      rgba(47, 48, 58, 0.4)),
         url("../../img/tablet-img/hero-tablet@2x.jpg");
-        &-title 
-                {
-               
-                margin-bottom: 30px;
-                font-weight: 900;
-                font-size: 26px;
-                line-height: 1.62;
-                text-align: center;
-                color: white;
-                }
     }
   }
 
@@ -108,15 +108,17 @@
         rgba(47, 48, 58, 0.4),
        rgba(47, 48, 58, 0.4)),
           url("../../img/disktop-img/hero-disktop.jpg");
-          &-title 
-          {
-          max-width: 500px;
-          margin-bottom: 30px;
-          font-weight: 900;
+          padding-top: 200px;
+          padding-bottom: 200px;
+          background-size: 1600px 600px;
+          margin: 0 auto;
+          height: 600px;
+          max-width: 1600px;
+          
+          &-title {
           font-size: 44px;
-          text-align: center;
-          line-height: 1.36;
-          color: #FFFFFF;
+          line-height: 1.37;
+          width: 696px;
           }
   }
 }
@@ -130,15 +132,6 @@
         rgba (112, 113, 126, 0.4),
        rgba (47, 48, 58, 0.4)),
           url("../../img/disktop-img/hero-disktop@2x.jpg");
-          &-title 
-          {
-          max-width: 500px;
-          margin-bottom: 30px;
-          font-weight: 900;
-          font-size: 44px;
-          text-align: center;
-          line-height: 1.36;
-          color: #FFFFFF;
-          }
+         
     }
   }
