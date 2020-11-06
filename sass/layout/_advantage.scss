@@ -110,21 +110,23 @@
   .advantages-list {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-    &-item {
-    width: 354px;
+  .advantage-item {
+    width: 340px;
 }
-    &-item:not(:nth-child(2n)) {
-    margin-right: 30px;
+    .advantage-item:not(:nth-child(2n)) {
+    margin-right: 20px;
    }
   
-    &-item:nth-last-child(-n + 2) {
+   .advantage-item:nth-last-child(-n + 2) {
      margin-bottom: 0px;
      }
 
 }
 
-}
 
   @media screen and (min-width: 1200px) {
   .advantages {

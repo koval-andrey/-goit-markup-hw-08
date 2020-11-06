@@ -2,18 +2,20 @@
   .header {
     position: relative;
     padding: 25px 0;
-    border-bottom: 1px solid #ececec; 
+    border-bottom: 1px solid #ececec;
+     
   }
   
     
   .header-link {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.143;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     font-style: normal;
     text-decoration-line:none;
     color: $title-text-color;
+    margin-bottom: 40px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
     &:hover,
@@ -24,8 +26,9 @@
     }
   
    .address-items & {
-    color: text-decoration-line;
+    color: text--line;
     color: $title-text-color;
+    text-decoration: none;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     &:hover,
@@ -57,17 +60,46 @@
     background: $accent-color;
     border-radius: 2px;
   }
-  
+  .icon-smartphone 
+  {
+    fill: $primary-text-color;
+    margin-right: 10px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
   .icon-envelope {
     fill: $primary-text-color;
     margin-right: 10px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-    .header-link:hover &,
-    .header-link:focus &,
-    .header-link:active & {
-      fill: $accent-color;
     }
+    .header-link-address 
+    {
+        font-style: normal; 
+        list-style: none;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        cursor: pointer;
+        text-decoration-line:none;
+        color: $primary-text-color;
+        margin-left: auto;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+    
+        &:hover,    
+        &:focus
+                { 
+                color: $accent-color;
+                
+                & .icon-smartphone,
+                & .icon-smartphone
+                    {
+                        fill: $accent-color;   
+                    }
+                & .icon-envelope,
+                & .icon-envelope
+                            {
+                                fill: $accent-color;  
+                            }
+                }
   }
   
   
@@ -140,17 +172,18 @@
     .navigation-list-items,
     .address-items {
       text-align: center;
+      margin-bottom: 40px;
+      &:not(:last-child) {
+        margin-bottom: 40px;
     }
     
     .navigation
     {
-        &-item {
+        &-list-item {
+       display: block;
+  
+  
         
-        display: block;
-  
-  
-        &:not(:last-child) {
-        margin-bottom: 40px ;
         }
         
       }
@@ -190,6 +223,21 @@
   
    
   }
+  .header-link-address 
+    {
+        font-size: 18px;
+        line-height: 1.17;
+      }
+  .icon-envelope 
+  {
+  width: 16px;
+  height: 11px;  
+  }
+  .icon-smartphone 
+  {
+    width: 10px;
+    height: 15px;  
+  }
   }
   
   
@@ -204,13 +252,9 @@
         display: flex;
         align-items: center;
       }
-    &-contacts {
-      color: $primary-text-color;
-      display: flex;
-      align-items: center;
-    }
-  
+    
     & .address {
+      
       margin-left: auto;
     }
   }
@@ -218,11 +262,15 @@
   .navigation {
     display: flex;
     align-items: center;
-    margin-right: 82px;
+    margin-right: 55px;
+    
+    
   
-    & .navigation-list,
-    .address-list {
+    & .navigation-list
+   {
       display: flex;
+
+      
     }
   
     &-list-items {
@@ -235,8 +283,11 @@
   }
   
   .address .address-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    
+    
+    text-decoration: none;
+    text-decoration-line:none;
     }
   
     .address-items .header-link-address {
@@ -267,6 +318,20 @@
      transform: translate(50%, 500%);
   
   }
+  .header-link-address 
+    {
+        font-size: 12px;
+        line-height: 1.17;
+      }
+  .icon-envelope 
+  {
+  width: 14px;
+  height: 10px;  
+  }
+  .icon-smartphone 
+  {
+    width: 10px;
+    height: 14px;
   
     }
   
@@ -308,242 +373,20 @@
     
    
   }
-  
-  } 
-   
-   /* @media screen and (min-width: 320px) and (max-width: 767px) 
+}
+.header-link-address 
     {
-    .header {position: relative;}   
-     
-    .navigation 
-    {
-        display: block;
-        align-items: center;
-        
-        &-list 
-        {
-         display: block;
-        }
-    } 
-        .navigation-list-items 
-            {
-            padding: 32px 0;
-     
-                &:not(:last-child) 
-                {
-                margin-right: 50px;   
-                }
-            }
-        .menu-button 
-        {
-            display: inline-flex;
-            margin: 0;
-            padding: 0;
-            border: none;
-            background-color: transparent;
-        }
-        .menu-button .icon-menu
-        {
-            display: block;
-        }
-
-        .menu-button .icon-cross 
-        {
-            display: none;
-        }
-        .menu-button.is-open .icon-cross
-        {
-            display: block;
-        }
-        .menu-button.is-open .icon-menu 
-        {
-            display: none; 
-        }
-        .menu-container 
-        {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            background-color: $accent-color-light;
-            padding:0 ;
-            text-align: center;
-
-            & .is-open 
-            {
-                display: block;
-            }
-        }
-        .header-link 
-    {
-        font-style: normal; 
-        
-        list-style: none;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 1.17;
-        cursor: pointer;
-        text-decoration-line:none;
-        color: $title-text-color;
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        &:hover,    
-        &:focus
-                { 
-                
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 1.17;
-                letter-spacing: 0.02em;
-                text-decoration-line: none;
-                color: $accent-color;  
-                }
-                &.current 
-                {
-                color: $accent-color; 
-                position: relative;  
-                }
-        &.current::after
-                {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 4px;
-                left: 0;
-                top: 48px;
-                cursor: pointer;
-                background: $accent-color;
-                border-radius: 2px;
-                }
-                &.current 
-                {
-                color: $accent-color; 
-                position: relative;  
-                }
-        &.current::after
-                {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 4px;
-                left: 0;
-                top: 48px;
-                cursor: pointer;
-                background: $accent-color;
-                border-radius: 2px;
-                }
-            }
-<<<<<<< Updated upstream
-        }
-=======
->>>>>>> Stashed changes
-     
-    
-     /*.header-link 
-    {
-        font-style: normal; 
-        
-        list-style: none;
-        font-weight: 500;
         font-size: 14px;
-        line-height: 16px;
-        cursor: pointer;
-        text-decoration-line:none;
-        color: $title-text-color;
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-        &:hover,    
-        &:focus
-                { 
-                
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 1.14;
-                letter-spacing: 0.02em;
-                text-decoration-line: none;
-                color: $accent-color;  
-                }
-             
-
-        &.current 
-                {
-                color: $accent-color; 
-                position: relative;  
-                }
-        &.current::after
-                {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 4px;
-                left: 0;
-                top: 48px;
-                cursor: pointer;
-                background: $accent-color;
-                border-radius: 2px;
-                }
-    }
-   
-        .address 
-                {
-                    display: flex;
-                }
-                
-        .address-items
-                {
-                    padding: 32px 0;
-                
-                    &:not(:last-child) 
-                    {
-                    margin-right: 50px;   
-                    } 
-                }
-        .address-items .icon-smartphone
-                {
-                fill: $primary-text-color;
-                transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); }
-                
-                
-        .address-items .icon-envelope
-                {
-                fill: $primary-text-color;
-                transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);} 
-        
-          
-        
-         .address-list 
-         {   
-           display: flex;
-           margin-left: auto;
-         }       
-
-        .header-link-address 
-    {
-        font-style: normal; 
-        list-style: none;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        cursor: pointer;
-        text-decoration-line:none;
-        color: $primary-text-color;
-        margin-left: auto;
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);  
-    
-        &:hover,    
-        &:focus
-                { 
-                color: $accent-color;
-                
-                & .icon-smartphone,
-                & .icon-smartphone
-                    {
-                        fill: $accent-color;   
-                    }
-                & .icon-envelope,
-                & .icon-envelope
-                            {
-                                fill: $accent-color;  
-                            }
-                }
-    }*/
+        line-height: 1.14;
+      }
+  .icon-envelope 
+  {
+  width: 16px;
+  height: 14px;  
+  }
+  .icon-smartphone 
+  {
+    width: 10px;
+    height: 16px;
+  }
+}  
