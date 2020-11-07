@@ -51,7 +51,7 @@
     display: block;
     position: absolute;
     bottom: 0;
-    right: 50%;
+    right: 60%;
     transform: translate(50%, 200%);
   
     width: 100%;
@@ -315,7 +315,7 @@
   
     .current::after {
     content: "";
-     transform: translate(50%, 500%);
+     transform: translate(50%, 900%);
   
   }
   .header-link-address 
@@ -349,7 +349,21 @@
       margin-right: 305px;
     }
     
-  
+    .address .address-list 
+    {
+        display: flex;
+    }
+    .address-items:not(:last-child) 
+                {
+                margin-right: 50px;   
+            } 
+         .address-list 
+         {   
+           display: flex;
+           margin-left: auto;
+         }       
+
+    
     .address-item {
     
     

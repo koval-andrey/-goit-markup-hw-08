@@ -117,7 +117,7 @@
           background-size: 1600px 600px;
           margin: 0 auto;
           height: 600px;
-          max-width: 1600px;
+          width: 1600px;
           
           &-title {
           font-size: 44px;
@@ -136,6 +136,11 @@
         rgba (112, 113, 126, 0.4),
        rgba (47, 48, 58, 0.4)),
           url("../../img/disktop-img/hero-disktop@2x.jpg");
+          padding-top: 200px;
+          padding-bottom: 200px;
+          background-size: 1600px 600px;
+          height: 600px;
+          width: 1600px;
          
     }
   }
