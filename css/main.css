@@ -13,6 +13,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
+  min-width: 480px;
   max-width: 1600px;
 }
 
@@ -77,8 +78,8 @@ img {
 
 .modal-btn:hover,
 .modal-btn:focus {
-  border: var(--accent-color);
-  color: var(--accent-color);
+  border: #2196F3;
+  color: #2196F3;
 }
 
 .is-hidden {
@@ -499,8 +500,7 @@ img {
   border-style: none;
   background-color: #2196F3;
   transition-property: color, background-color;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-timing-function: linear;
+  transition: transform 250ms;
   /*активная кнопка в hero*/
 }
 
@@ -508,9 +508,6 @@ img {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.875;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: #2196F3;
   background-color: #21f3d7;
@@ -592,8 +589,8 @@ img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background: #FFFFFF;
@@ -601,96 +598,13 @@ img {
   z-index: 999999;
 }
 
-/*@media screen and (min-width: 480px) {
-    .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1) rotate(360deg);
-    width: 450px;
-    height: 608px;
-  
-    .backdrop.is-hidden & {
-      transform: translate(-50%, -50%) scale(0);
-    }
-  
-    }
-  
-  }
-  
-  @media screen and (min-width:1200px) {
-    .modal {
-     width: 528px;
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
     height: 581px;
-  
-    &-title {
-      line-height: 1.15;
-  
-   }
-   }
-   .modal-form {
-     font-size: 12px;
-  
-    &::placeholder {
-        font-size: 12px;
-        line-height: 1.167;
-        
-      }
-      }
-    }
-  
-    @media screen and (min-width: 480px) 
-    {
-        .modal {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(1) rotate(360deg);
-        width: 450px;
-        height: 609px;
-      
-        .backdrop.is-hidden & {
-          transform: translate(-50%, -50%) scale(0);
-        }
-      
-        }
-      
-      }
-      
-      @media screen and (min-width:1200px) 
-      {
-        .modal {
-         width: 528px;
-        height: 581px;
-      
-        &-title {
-          line-height: 1.15;
-      
-       }
-       }
-       .modal-form {
-         font-size: 12px;
-      
-        &::placeholder {
-            font-size: 12px;
-            line-height: 1.167;
-            
-          }
-                
-         .checkbox-link {
-          font-size: 14px;
-          line-height: 1.714;
-      
-          
-            & a {
-            font-size: 14px;
-            line-height: 1.714;
-           
-          }
-      
-        }
-      }
-      } */
+  }
+}
+
 .form-order {
   display: block;
   margin-left: auto;
@@ -702,7 +616,7 @@ img {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  width: 448px;
+  width: 370px;
   margin-bottom: 10px;
 }
 
@@ -725,7 +639,7 @@ img {
 
 .form-order-input {
   display: block;
-  width: 448px;
+  width: 370px;
   height: 40px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -740,7 +654,7 @@ img {
 
 .form-order-textarea {
   resize: none;
-  width: 448px;
+  width: 370px;
   height: 120px;
   margin-bottom: 20px;
   padding-left: 20px;
@@ -791,8 +705,8 @@ img {
   -moz-appearance: none;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -802,7 +716,7 @@ img {
   width: 15px;
   height: 16px;
   align-self: center;
-  margin-left: 8px;
+  margin-right: 8px;
   background-color: transparent;
   border: 2px solid #212121;
   border-radius: 2px;
@@ -815,12 +729,40 @@ img {
   border-color: transparent;
 }
 
+.checkbox-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.167;
+  color: #757575;
+}
+
 .checkbox-link-oder {
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.167;
   color: #2196F3;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-order-field,
+  .form-order-input,
+  .form-order-textarea {
+    width: 448px;
+  }
+  .checkbox-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  .form-order-checkbox {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .advantages {

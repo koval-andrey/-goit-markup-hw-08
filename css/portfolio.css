@@ -13,6 +13,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
+  min-width: 480px;
   max-width: 1600px;
 }
 
@@ -930,8 +931,7 @@ img {
   border-style: none;
   background-color: #2196F3;
   transition-property: color, background-color;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-timing-function: linear;
+  transition: transform 250ms;
   /*активная кнопка в hero*/
 }
 
@@ -939,9 +939,6 @@ img {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.875;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: #2196F3;
   background-color: #21f3d7;

@@ -15,8 +15,8 @@
                 .modal-btn:hover,
                 .modal-btn:focus
                 {
-                  border: var(--accent-color);
-                  color: var(--accent-color);
+                  border: $accent-color;
+                  color: $accent-color;
                    
                 }
                 .is-hidden 

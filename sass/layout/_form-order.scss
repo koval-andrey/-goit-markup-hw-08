@@ -11,7 +11,7 @@
                 justify-content: center;
                 position: relative;
                 
-                width: 448px;
+                width: 370px;
                 margin-bottom: 10px;
                 
                     &:hover .form-icon-svg,
@@ -37,7 +37,7 @@
                 {
                     display: block;
                      
-                    width: 448px;
+                    width: 370px;
                     height: 40px;
                     padding-left: 42px;
                     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -55,7 +55,7 @@
                 &-textarea 
                 {
                   resize: none;
-                width: 448px;
+                width: 370px;
                 height: 120px; 
                 margin-bottom: 20px;
                 padding-left: 20px;
@@ -117,12 +117,11 @@
                     appearance: none;
                     -webkit-appearance: none;
                     -moz-appearance: none;
-    
-                    
                     font-style: normal;
                     font-weight: normal;
-                    font-size: 14px;
-                    line-height: 1.71;
+                    
+                    font-size: 12px;
+                    line-height: 1.167;
                     letter-spacing: 0.03em;
                     
                     color: #757575;
@@ -135,7 +134,7 @@
                 width: 15px;
                 height: 16px;
                align-self: center;
-                margin-left: 8px;
+                margin-right: 8px;
                 background-color: transparent;
                 border: 2px solid #212121;
                 border-radius: 2px;
@@ -148,11 +147,45 @@
                 background-origin: border-box;
                 border-color: transparent;
             }
+            .checkbox-link 
+            {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 1.167;
+                color: #757575;
+                }
+
             .checkbox-link-oder 
             {
             font-style: normal;
             font-weight: normal;
-            font-size: 14px;
-            line-height: 1.71;
+            font-size: 12px;
+            line-height: 1.167;
             color: $accent-color;
+            }
+            @media screen and (min-width: 1200px)  {
+                .form-order-field,
+                .form-order-input,
+                .form-order-textarea
+                {
+                 width: 448px;   
+                }
+                .checkbox-link 
+                {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 1.71;
+                letter-spacing: 0.03em;
+
+                }
+
+                .form-order-checkbox 
+                {
+                    font-size: 14px;
+                    line-height: 1.71;
+                    letter-spacing: 0.03em;   
+                }
+
             }
