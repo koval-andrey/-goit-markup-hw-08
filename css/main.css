@@ -36,8 +36,6 @@ img {
 }
 
 .container {
-  display: block;
-  align-items: center;
   padding: 0 15px;
   margin: 0 auto;
 }
